@@ -5,7 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+      .container{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(18, 14, 55, 0.811);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+        height: 70vh;
+        width: 300px;
+        background-color: rgb(14, 12, 46);
+      }
+</style>
 <body>
-    
+    <div class="container">
+        <div class="card">
+            <div class="score">
+
+            </div>
+            <button class="start-btn btn">Start</button>
+            <button class="rest_btn btn">Rest</button>
+            <button class="stop-btn btn">Stop</button>
+            <button class="gettime btn">GetTime</button>
+            <button class="clearTime btn">Clear Time</button>
+        </div>
+    </div>
 </body>
 </html>
