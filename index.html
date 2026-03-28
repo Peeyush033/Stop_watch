@@ -88,16 +88,20 @@ idinterval=setInterval(()=>{countdownele.innerText=startcount++;},1000);
 };
 
 // stop function
+
+let stop=()=>{
+  
+  let currentvalue=startcount;
+  let newpara=document.createElement('p');
+  newpara.innerText=`the stop time ${currentvalue -1}`;
+   restvalueelmeent.append(newpara);
+};
 let stoptime=()=>{
+  stop()
   clearInterval(idinterval);
+
 };
 
-
-// clear
-let ClearTimevalue=()=>{
-   clearInterval(idinterval);
-countdownele.innerText=startcount='0';
-};
 
 // rest
 let rest=()=>{
@@ -107,14 +111,22 @@ let rest=()=>{
      clearInterval(idinterval);
 };
 
+// get time
 let showTime=()=>{
   
   let currentvalue=startcount;
   let newpara=document.createElement('p');
-  newpara.innerText=`the stop time ${currentvalue}`;
+  newpara.innerText=`the get time ${currentvalue -1}`;
    restvalueelmeent.append(newpara);
 };
 
+
+
+// clear
+let ClearTimevalue=()=>{
+   restvalueelmeent.innerHTML="";
+
+};
 
 
 
